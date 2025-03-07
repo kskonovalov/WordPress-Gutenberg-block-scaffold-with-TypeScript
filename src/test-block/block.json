@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/test-block",
+	"version": "0.1.0",
+	"title": "Test Block",
+	"category": "widgets",
+	"icon": "admin-site",
+	"description": "Doing something really cool with Test Block and WordPress.",
+	"example": {},
+	"supports": {
+		"html": false,
+		"color": {
+			"background": true,
+			"text": true
+		},
+		"typography": {
+			"fontSize": true,
+			"weight": true
+		}
+	},
+	"attributes": {
+		"showPrefix": {
+			"type": "boolean"
+		},
+		"prefix": {
+			"type": "string"
+		}
+	},
+	"textdomain": "test-block",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}

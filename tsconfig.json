@@ -1,0 +1,23 @@
+{
+	"compilerOptions": {
+		"resolveJsonModule": true,
+		"esModuleInterop": true,
+		"jsx": "react-jsx",
+		"target": "ES2015",
+		"lib": ["dom", "dom.iterable", "esnext", "ES2015"],
+		"allowJs": true,
+		"skipLibCheck": true,
+		"strict": true,
+		"noEmit": true,
+		"module": "commonjs",
+		"moduleResolution": "bundler",
+		"isolatedModules": true,
+		"incremental": true,
+		"outDir": "./build/",
+		"noImplicitAny": true,
+		"allowSyntheticDefaultImports": true
+	},
+	"include": [
+		"src"
+	]
+}
