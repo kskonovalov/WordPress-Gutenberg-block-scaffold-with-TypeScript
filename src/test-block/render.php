@@ -7,6 +7,5 @@
 	<?php
 	if((boolean)$attributes['showPrefix'] && !empty($attributes['prefix'])) { echo esc_html($attributes['prefix']) . " "; }
 	echo date('j F Y');
-	echo $content;
 	?>
 </p>

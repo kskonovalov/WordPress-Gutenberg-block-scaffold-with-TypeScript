@@ -9,14 +9,77 @@
 	"description": "Doing something really cool with Test Block and WordPress.",
 	"example": {},
 	"supports": {
-		"html": false,
+		"align": ["left", "center", "right"],
+		"alignWide": true,
+		"anchor": true,
+		"ariaLabel": true,
+		"background": {
+			"backgroundImage": true,
+			"backgroundSize": true
+		},
+		"border": {
+			"radius": true,
+			"style": true,
+			"width": true
+		},
+		"className": true,
 		"color": {
+			"background": true,
+			"link": true,
+			"text": true
+		},
+		"customBorder": {
+			"radius": true,
+			"style": true,
+			"width": true
+		},
+		"customClassName": true,
+		"customColor": {
+			"background": true,
+			"link": true,
+			"text": true
+		},
+		"customGradient": {
 			"background": true,
 			"text": true
 		},
+		"customSpacing": {
+			"margin": true,
+			"padding": true
+		},
+		"customUnits": {
+			"margin": true,
+			"padding": true
+		},
+		"html": true,
+		"inserter": true,
+		"interactivity": true,
+		"layout": {
+			"allowCustomContentAndWideSize": true,
+			"allowEditing": true,
+			"allowInheriting": true,
+			"allowJustification": true,
+			"allowOrientation": true,
+			"allowSizingOnChildren": true,
+			"allowSwitching": true,
+			"allowVerticalAlignment": true,
+			"default": true
+		},
+		"lock": true,
+		"multiple": true,
+		"reusable": true,
+		"renaming": true,
+		"shadow": true,
+		"spacing": {
+			"margin": true,
+			"padding": true
+		},
+		"splitting": true,
 		"typography": {
 			"fontSize": true,
-			"weight": true
+			"letterSpacing": true,
+			"lineHeight": true,
+			"textTransform": true
 		}
 	},
 	"attributes": {
