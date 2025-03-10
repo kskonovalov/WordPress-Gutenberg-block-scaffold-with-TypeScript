@@ -8,7 +8,7 @@ import { BlockAttributesType } from "./types";
 import "./style.scss";
 
 registerBlockType<BlockAttributesType>(metadata.name, {
-	...(metadata as unknown as Partial<BlockConfiguration<BlockAttributesType>>),
+	...(metadata as Partial<BlockConfiguration<BlockAttributesType>>),
 	edit,
 	save,
 } as BlockConfiguration<BlockAttributesType>);

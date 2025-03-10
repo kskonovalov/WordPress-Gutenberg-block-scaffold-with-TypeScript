@@ -88,6 +88,29 @@
 		},
 		"prefix": {
 			"type": "string"
+		},
+		"media": {
+			"type": "object",
+			"properties": {
+				"id": {
+					"type": "number"
+				},
+				"url": {
+					"type": "string"
+				},
+				"alt": {
+					"type": "string"
+				},
+				"title": {
+					"type": "string"
+				},
+				"width": {
+					"type": "number"
+				},
+				"height": {
+					"type": "number"
+				}
+			}
 		}
 	},
 	"textdomain": "test-block",
