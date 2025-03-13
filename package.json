@@ -1,5 +1,5 @@
 {
-	"name": "ts-block-scaffold",
+	"name": "ts-block",
 	"version": "0.1.0",
 	"description": "Gutenberg block scaffold with types and basic parameters",
 	"author": "Konstantin Konovalov",

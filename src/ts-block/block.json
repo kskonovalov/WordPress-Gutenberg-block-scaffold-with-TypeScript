@@ -1,12 +1,12 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
 	"apiVersion": 3,
-	"name": "create-block/test-block",
+	"name": "create-block/ts-block",
 	"version": "0.1.0",
-	"title": "Test Block",
+	"title": "TypeScript block scaffold",
 	"category": "widgets",
 	"icon": "admin-site",
-	"description": "Doing something really cool with Test Block and WordPress.",
+	"description": "Gutenberg block scaffold with types and basic parameters",
 	"example": {},
 	"supports": {
 		"align": ["left", "center", "right"],
@@ -113,7 +113,7 @@
 			}
 		}
 	},
-	"textdomain": "test-block",
+	"textdomain": "ts-block",
 	"editorScript": "file:./index.js",
 	"editorStyle": "file:./index.css",
 	"style": "file:./style-index.css",

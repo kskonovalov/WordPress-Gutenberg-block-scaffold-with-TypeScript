@@ -25,15 +25,26 @@ A simple scaffold for creating Gutenberg blocks using TypeScript and React. This
    git clone <repository-url>
    cd <repository-directory>
    ```
+2. Using find and rename (CTRL+SHIFT+R / CMD+SHIFT+R) rename next lines:
+   - TypeScript block scaffold -> Your Block Name
+   - Gutenberg block scaffold with types and basic parameters -> Your Block Description
+   - ts-block -> Your text-domain
 
-2. Install dependencies:
+
+3. Install dependencies:
    ```bash
    npm install
    ```
 
-3. Start the development server:
+4. Start the development server:
    ```bash
    npm run start
+   ```
+5. Open your WordPress admin panel and navigate to the block editor. You should see your custom block available for use.
+
+6. To build the project for production, run:
+   ```bash
+   npm run build
    ```
 
 ---
@@ -42,7 +53,6 @@ A simple scaffold for creating Gutenberg blocks using TypeScript and React. This
 
 | Script               | Description                                       |
 |----------------------|---------------------------------------------------|
-| ------------------   | ------------------------------------------------- |
 |`npm run start` |	Start development mode with live reloading and PHP copying. |
 |`npm run build` |	Build the project for production, copying PHP files. |
 |`npm run format` |	Format the code using Prettier. |

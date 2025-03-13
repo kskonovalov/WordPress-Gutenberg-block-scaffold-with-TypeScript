@@ -36,9 +36,9 @@ export default function Edit({
 	return (
 		<>
 			<InspectorControls>
-				<PanelBody title={__("Test settings", "test-block")}>
+				<PanelBody title={__("Block settings", "ts-block")}>
 					<ToggleControl
-						label={__("Prefix Enabled", "test-block")}
+						label={__("Prefix Enabled", "ts-block")}
 						checked={showPrefix}
 						onChange={() => {
 							setAttributes({ showPrefix: !showPrefix });
@@ -47,9 +47,9 @@ export default function Edit({
 				</PanelBody>
 			</InspectorControls>
 			<BlockControls>
-				<PanelBody title={__("Test settings", "test-block")}>
+				<PanelBody title={__("Block settings", "ts-block")}>
 					<ToggleControl
-						label={__("Prefix Enabled", "test-block")}
+						label={__("Prefix Enabled", "ts-block")}
 						checked={showPrefix}
 						onChange={() => {
 							setAttributes({ showPrefix: !showPrefix });
@@ -64,7 +64,7 @@ export default function Edit({
 					onChange={(value) => {
 						setAttributes({ prefix: value });
 					}}
-					placeholder={__("Prefix", "test-block")}
+					placeholder={__("Prefix", "ts-block")}
 					style={{ opacity: showPrefix ? 1 : 0.3 }}
 				/>
 				{currentDate}
@@ -104,7 +104,7 @@ export default function Edit({
 									iconSize={20}
 									iconPosition="right"
 								>
-									{__("Upload Image", "test-block")}
+									{__("Upload Image", "ts-block")}
 								</Button>
 							</>
 						)}
@@ -121,7 +121,7 @@ export default function Edit({
 							iconPosition="right"
 							style={{ marginLeft: "10px" }}
 						>
-							{__("Remove Image", "test-block")}
+							{__("Remove Image", "ts-block")}
 						</Button>
 					)}
 				</MediaUploadCheck>
