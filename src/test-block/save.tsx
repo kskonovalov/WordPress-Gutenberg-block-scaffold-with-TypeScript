@@ -4,6 +4,11 @@ import { ResponsiveWrapper } from "@wordpress/components";
 
 import { BlockAttributesType } from "./types";
 
+/**
+ * Use it to save STATIC blocks content
+ * This way you don't need to have render.php
+ * @param attributes
+ */
 export default function save({
 	attributes,
 }: BlockSaveProps<BlockAttributesType>) {

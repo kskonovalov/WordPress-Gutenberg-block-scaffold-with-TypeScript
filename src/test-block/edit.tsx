@@ -19,6 +19,13 @@ import {
 import { BlockAttributesType } from "./types";
 import "./editor.scss";
 
+/**
+ * Use it to show the block editor
+ *
+ * @param attributes
+ * @param setAttributes
+ * @constructor
+ */
 export default function Edit({
 	attributes,
 	setAttributes,

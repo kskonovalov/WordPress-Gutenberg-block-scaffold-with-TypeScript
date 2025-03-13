@@ -6,6 +6,10 @@
  * @var WP_Block $block Block instance.
  */
 
+/**
+ * Use this to DYNAMIC blocks
+ * Most likely save.tsx should just return null in this case
+ */
 ?>
 
 <div <?php
