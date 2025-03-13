@@ -7,6 +7,7 @@ import {
 	MediaUploadCheck,
 	RichText,
 	useBlockProps,
+	InnerBlocks,
 } from "@wordpress/block-editor";
 import {
 	PanelBody,
@@ -36,15 +37,6 @@ export default function Edit({
 							setAttributes({ showPrefix: !showPrefix });
 						}}
 					/>
-					{/*{showPrefix && (
-						<TextControl
-							label={__("Prefix", "test-block")}
-							value={prefix}
-							onChange={(value) => {
-								setAttributes({ prefix: value });
-							}}
-						/>
-					)}*/}
 				</PanelBody>
 			</InspectorControls>
 			<BlockControls>
@@ -126,6 +118,7 @@ export default function Edit({
 						</Button>
 					)}
 				</MediaUploadCheck>
+				<InnerBlocks />
 			</p>
 		</>
 	);

@@ -1,4 +1,4 @@
-import { useBlockProps } from "@wordpress/block-editor";
+import { useBlockProps, InnerBlocks } from "@wordpress/block-editor";
 import { BlockSaveProps } from "@wordpress/blocks";
 import { ResponsiveWrapper } from "@wordpress/components";
 
@@ -8,12 +8,13 @@ export default function save({
 	attributes,
 }: BlockSaveProps<BlockAttributesType>) {
 	const { prefix, showPrefix } = attributes;
-	console.log("save", prefix);
-	const currentDate = new Date().toLocaleDateString();
+	// Do not include the currentDate in the Save function, otherwise every time it is changed, the block will 'attemt recovery'
+	// save only static value
+	// const currentDate = new Date().toLocaleDateString();
 	return (
 		<p {...useBlockProps.save()}>
 			{showPrefix ? `${prefix} ` : ""}
-			{currentDate}
+			%current date%
 			{typeof attributes.media !== "undefined" && (
 				<ResponsiveWrapper
 					naturalWidth={attributes.media.width}
@@ -22,6 +23,7 @@ export default function save({
 					<img src={attributes.media.url} alt={attributes.media.alt} />
 				</ResponsiveWrapper>
 			)}
+			<InnerBlocks.Content />
 		</p>
 	);
 }
